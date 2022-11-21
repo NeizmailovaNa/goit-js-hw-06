@@ -7,15 +7,16 @@ console.log('Category:', nameOfFirstCategory.textContent);
 const numberOfElementsOfFirstCategory = document.querySelector('.item').querySelectorAll('li');
 console.log('Elements:', numberOfElementsOfFirstCategory.length);
 
-/*const nameOfSecondCategory = document.querySelector('h2');
+const nameOfSecondCategory = document.querySelector('.item').nextElementSibling.querySelector('h2');
 console.log('Category:', nameOfSecondCategory.textContent);
 
-const numberOfElementsOfSecondCategory = document.querySelector('.item').querySelectorAll('li');
+const numberOfElementsOfSecondCategory = document.querySelector('.item').nextElementSibling.querySelectorAll('li');
 console.log('Elements:', numberOfElementsOfSecondCategory.length);
 
-const nameOfThirdCategory = document.querySelector('h2');
+
+
+const nameOfThirdCategory = document.querySelector('.item').nextElementSibling.nextElementSibling.querySelector('h2');
 console.log('Category:', nameOfThirdCategory.textContent);
 
-const numberOfElementsOfThirdCategory = document.querySelector('.item').querySelectorAll('li');
+const numberOfElementsOfThirdCategory = document.querySelector('.item').nextElementSibling.nextElementSibling.querySelectorAll('li');
 console.log('Elements:', numberOfElementsOfThirdCategory.length);
-*/
