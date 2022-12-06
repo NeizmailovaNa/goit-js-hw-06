@@ -1,22 +1,13 @@
-const numberOfCategories = document.querySelectorAll('.item');
-console.log('Number of categories:', numberOfCategories.length);
+const categoriesEl = document.querySelector(`#categories`);
+const numberOfCategoriesEl = categoriesEl.children.length;
+console.log('Number of categories:', numberOfCategoriesEl);
 
-const nameOfFirstCategory = document.querySelector('h2');
-console.log('Category:', nameOfFirstCategory.textContent);
+const titleEl = document.querySelectorAll(`.item h2`);
+const itemEl = categoriesEl.querySelectorAll(`.item ul`);
 
-const numberOfElementsOfFirstCategory = document.querySelector('.item').querySelectorAll('li');
-console.log('Elements:', numberOfElementsOfFirstCategory.length);
-
-const nameOfSecondCategory = document.querySelector('.item').nextElementSibling.querySelector('h2');
-console.log('Category:', nameOfSecondCategory.textContent);
-
-const numberOfElementsOfSecondCategory = document.querySelector('.item').nextElementSibling.querySelectorAll('li');
-console.log('Elements:', numberOfElementsOfSecondCategory.length);
-
-
-
-const nameOfThirdCategory = document.querySelector('.item').nextElementSibling.nextElementSibling.querySelector('h2');
-console.log('Category:', nameOfThirdCategory.textContent);
-
-const numberOfElementsOfThirdCategory = document.querySelector('.item').nextElementSibling.nextElementSibling.querySelectorAll('li');
-console.log('Elements:', numberOfElementsOfThirdCategory.length);
+titleEl.forEach( element => {
+    console.log('Category:', element.textContent);
+});
+itemEl.forEach( element => {
+    console.log('Element:', element.querySelectorAll(`ul li`).length);
+});

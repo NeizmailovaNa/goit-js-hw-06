@@ -1,14 +1,14 @@
 const inputEl = document.querySelector('#name-input');
-inputEl.addEventListener('input', onInputChange);
-
 const outputEl = document.querySelector('#name-output');
 
+inputEl.addEventListener('input', onInputChange);
+
+
 function onInputChange (event) {
-    if (event.currentTarget.value === "") {
-        return "Anonymous"
-    } else {
-       outputEl.textContent = event.currentTarget.value
-       return event.currentTarget.value
+    if (outputEl.textContent = event.currentTarget.value) {
+        return event.currentTarget.value
+    } else if (event.currentTarget.value === "") {
+       return "Anonymous" 
     } 
 }
 
