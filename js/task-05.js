@@ -5,10 +5,7 @@ inputEl.addEventListener('input', onInputChange);
 
 
 function onInputChange (event) {
-    if (outputEl.textContent = event.currentTarget.value) {
-        return event.currentTarget.value
-    } else if (event.currentTarget.value === "") {
-       return "Anonymous" 
-    } 
-}
+    outputEl.textContent = event.currentTarget.value || "Anonymous"
+}    
+
 
